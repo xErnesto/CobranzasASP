@@ -1,10 +1,20 @@
 ﻿<!-- Content Header (Page header) -->
-<section class="content-header">
+<section class="content-header" style="width:100%">
     <div class="container-fluid">
         <div class="row mb-2">
 
 
-            <div class="col-md-6 col-sm-6 col-12">
+
+            <div class="col-md-2 col-sm-6 col-12">
+                    <select class="form-control select2" style="width: 100%;  height:37px;">
+                        <option selected="selected">Rut</option>
+                        <option>Nombre</option>
+                        <option>ID</option>
+                    </select>
+            </div>
+
+
+            <div class="col-md-4 col-sm-6 col-12">
 
                 <!-- SIDEBAR SEARCH  -->
                 <div class="sidebar-search" style="width:100%">
@@ -21,297 +31,447 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-12">
-                <button type="button" class="btn btn-block btn-lg" style="background-color:#ff6721; color:white">Gestionar</button>
+            <div class="col-md-2 col-sm-6 col-12">
+                <button type="button" class="btn btn-block button-two">Gestionar</button>
             </div><!-- /.container-fluid -->
 
 
-            <div class="col-md-3 col-sm-6 col-12">
-                <button type="button" class="btn btn-block btn-primary btn-lg">Ver gestiones</button>
+            <div class="col-md-2 col-sm-6 col-12">
+                <button type="button" class="btn btn-block button-one">Fonos</button>
             </div><!-- /.container-fluid -->
+
+            <div class="col-md-2 col-sm-6 col-12">
+                <button type="button" class="btn btn-block button-one">Emails</button>
+            </div>
         </div>
     </div>
 </section>
 
+
+
+<!--TABLAS CARTERA Y DATOS-->
 <section class="content">
     <div class="container-fluid">
+
         <div class="row">
-            <div class="col-12">
 
 
 
-                <!-- Main content -->
-                <div class="invoice p-3 mb-3">
-                    <div class="row">
-                        <div class="col-12">
-                            <h4>
-                                <i class="fas fa-globe"></i> Información de cartera
-                                
-                            </h4>
-                        </div>
-                        <!-- /.col -->
-                    </div><!-- title row -->
-                    <!-- info row -->
-                    <div class="row invoice-info">
-                        <div class="col-sm-4 invoice-col">
-                            <strong>Mandante:</strong>
-                            <address>
-                                Ripley S.A
-                                <br>
-                                <strong>Producto:</strong>
-                                <br>
-                                Car
-                            </address>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-sm-4 invoice-col">
-                            <strong>Estado:</strong>
-                            <address>
-                                Vigente
-                                <br>
-                                <strong>Ejecutivo asignado</strong>
-                                <br>
-                                Alguien
-                            </address>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-sm-4 invoice-col">
-                            <b>Bloqueado</b>
-                            <br>
-                            4F3S8J
-                            <br>
-                            <b>Fecha de úlitmo estado</b><br>
-                            04/10/2019
-                        </div>
-                        <!-- /.col -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title title-crm"><i class="fas fa-globe"></i> Información de cartera</h3>
                     </div>
-                    <!-- /.row -->
-                    <!-- Table row -->
-                    <!-- /.row -->
-                    <!-- /.row -->
-                    <!-- this row will not appear when printing -->
+
+
+                    <div class="card-body p-0">
+                        <table class="table table-condensed">
+                            <thead>
+
+                                <!--
+                    <tr>
+
+                        <th>#</th>
+                        <th>Task</th>
+                        <th>Progress</th>
+                    </tr>
+                    -->
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class="fa fa-industry"></i></td>
+                                    <td><p class="bold-crm">Mandante:</p></td>
+                                    <td><p class="text-crm">Ripley S.A</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa fa-user-circle-o"></i></td>
+                                    <td><p class="bold-crm">Ejecutivo asignado:</p></td>
+                                    <td><p class="text-crm">Alguien</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa fa-check-square-o"></i></td>
+                                    <td><p class="bold-crm">Estado:</p></td>
+                                    <td><p class="text-crm">Vigente</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa fa-calendar"></i></td>
+                                    <td><p class="bold-crm">Fec. Último estado:</p></td>
+                                    <td><p class="text-crm">04/10/2019</p><td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa fa-archive"></i></td>
+                                    <td><p class="bold-crm">Producto:</p></td>
+                                    <td><p class="text-crm">Car</p></td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
 
                 </div>
-                <!-- /.invoice -->
-            </div><!-- /.col -->
+
+
+
+
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title title-crm"><i class="fas fa-credit-card"></i> Detalle deuda</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0">
+                        <table class="table table-condensed">
+                            <thead>
+                                <!--
+                        <tr>
+                            <th>#</th>
+                            <th>Task</th>
+                            <th>Progress</th>
+                        </tr>
+                    -->
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td><i class="fa fa-money"></i></td>
+                                    <td><p class="bold-crm">Capital:</p></td>
+                                    <td><span class="badge bg-success">$300</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa fa-percent"></i></td>
+                                    <td><p class="bold-crm">Interés:</p></td>
+                                    <td><span class="badge bg-success">$400</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa fa-calculator"></i></td>
+                                    <td><p class="bold-crm">Gastos:</p></td>
+                                    <td><span class="badge bg-success">$400</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa fa-credit-card"></i></td>
+                                    <td><p class="bold-crm">Cargos:</p></td>
+                                    <td><span class="badge bg-success">$100</span></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td><i class="fa fa-credit-card"></i></td>
+                                    <td><p class="bold-crm">Otros Cargos:</p></td>
+                                    <td><span class="badge bg-success">$8600</span></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td><i class="fa fa-times"></i></td>
+                                    <td><p class="bold-crm">X Vencer:</p></td>
+                                    <td><span class="badge bg-success">$845</span></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td><i class="fa fa-money"></i></td>
+                                    <td><p class="bold-crm">Total pagos</p></td>
+                                    <td><span class="badge bg-success">$1430</span></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td><i class="fa fa-money"></i></td>
+                                    <td><p class="bold-crm">Saldo:</p></td>
+                                    <td><span class="badge bg-success">$800</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title title-crm"><i class="fas fa-address-book "></i> Datos deudor</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0">
+                        <table class="table table-condensed">
+                            <thead>
+                                <!--
+                        <tr>
+                            <th>#</th>
+                            <th>Task</th>
+                            <th>Progress</th>
+                        </tr>
+                    -->
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class="fas fa-address-card"></i></td>
+                                    <td><p class="bold-crm">Rut:</p></td>
+                                    <td><p class="text-crm">26263200-8</p></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fas fa-hashtag"></i>
+                                    </td>
+                                    <td><p class="bold-crm">Id Deudor:</p></td>
+
+                                    <td><p class="text-crm">#209945</p></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-user"></i></td>
+                                    <td><p class="bold-crm">Nombre completo:</p></td>
+                                    <td><p class="text-crm">Kevin Briceño</p></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker "></i></td>
+                                    <td><p class="bold-crm">Dirección:</p></td>
+                                    <td><p class="text-crm">San Isidro</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fas fa-home "></i></td>
+                                    <td><p class="bold-crm">Comuna:</p></td>
+                                    <td><p class="text-crm">Santiago</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fas fa-map"></i></td>
+                                    <td><p class="bold-crm">Ciudad:</p></td>
+                                    <td><p class="text-crm">Santiago</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /.card-body -->
+
+
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title title-crm"><i class="fa fa-bar-chart"></i> Estadísticas</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0">
+                        <table class="table table-condensed">
+                            <thead>
+                                <!--
+                        <tr>
+                            <th>#</th>
+                            <th>Task</th>
+                            <th>Progress</th>
+                            <th>Label</th>
+                        </tr>
+                    -->
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class="fa fa-phone-square"></i></td>
+                                    <td><p class="bold-crm">q_llamados:</p></td>
+                                    <td>
+                                        <p class="text-crm">12</p>
+                                    </td>
+                                    <td><span class="badge bg-success">+70%</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="far fa-times-circle"></i></td>
+                                    <td><p class="bold-crm">q_rechazan:</p></td>
+                                    <td>
+                                        <p class="text-crm">12</p>
+                                    </td>
+                                    <td><span class="badge bg-success">+70%</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="far fa-times-circle"></i></td>
+                                    <td><p class="bold-crm">q_rechazan_mes_actual:</p>
+                                    <td>
+                                        <p class="text-crm">12</p>
+                                    </td>
+                                    <td><span class="badge bg-success">+70%</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-ban"></i></td>
+                                    <td><p class="bold-crm">q_titular_corta:</p></td>
+                                    <td>
+                                        <p class="text-crm">12</p>
+                                    </td>
+                                    <td><span class="badge bg-success">+70%</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-ban"></i></td>
+                                    <td><p class="bold-crm">q_titular_corta_mes_actual:</p></td>
+                                    <td>
+                                        <p class="text-crm">12</p>
+                                    </td>
+                                    <td><span class="badge bg-success">+70%</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-credit-card"></i></td>
+                                    <td><p class="bold-crm">q_compromiso:</p></td>
+                                    <td>
+                                        <p class="text-crm">12</p>
+                                    </td>
+                                    <td><span class="badge bg-success">+70%</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-credit-card"></i></td>
+                                    <td><p class="bold-crm">q_compromiso_mes:</p></td>
+                                    <td>
+                                        <p class="text-crm">12</p>
+                                    </td>
+                                    <td><span class="badge bg-success">+70%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card -->
         </div>
-    </div><!-- /.row --><!-- /.container-fluid -->
+    </div>
 </section>
 
 
 
 
-<!-- Main content -->
+
+
 <section class="content">
     <div class="container-fluid">
+
+        <!-- /.row -->
         <div class="row">
-
-            <!-- left column -->
-            <div class="col-md-6">
-                <!-- general form elements -->
-                <!-- /.card -->
-                <!-- Input addon -->
-                <div class="card card-primary">
+            <div class="col-12">
+                <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Datos deudor</h3>
-                    </div>
-                    <div class="card-body">
+                        <h3 class="card-title title-crm"><i class="fa fa-file-text"></i> Documentos</h3>
 
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <!-- text input -->
-                                <div class="form-group">
-                                    <label>Rut</label>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fas fa-address-card"></i></span>
-                                        </div>
-                                        <input type="email" class="form-control" disabled value="26263200">
+                        <!--
+                            <div class="card-tools">
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label style="color:white">A</label>
-                                    <input type="text" class="form-control" disabled value="8">
-                                </div>
-                            </div>
-                        </div>
+                        -->
 
-                        <label>ID</label>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-hashtag"></i></span>
-                            </div>
-                            <input type="email" class="form-control" disabled value="#209945">
-                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body table-responsive p-0" style="padding:12px">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>N° Documento</th>
+                                    <th>Fec. Vencimiento</th>
+                                    <th>Días Mora</th>
+                                    <th>Monto</th>
+                                    <th>Interés</th>
+                                    <th>Honorarios</th>
+                                    <th>Gastos</th>
+                                    <th>Gastos Jud.</th>
+                                    <th>Interés Penal</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><button type="button" class="btn btn-primary button-inner crm-font">Ver datos</button></td>
+                                    <td>17070580</td>
+                                    <td>01/03/2017</td>
+                                    <td>1008</td>
+                                    <td>357853</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>Vigente</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-primary button-inner crm-font">Ver datos</button></td>
+                                    <td>17070580</td>
+                                    <td>01/03/2017</td>
+                                    <td>1008</td>
+                                    <td>357853</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>Vigente</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-primary button-inner crm-font">Ver datos</button></td>
+                                    <td>17070580</td>
+                                    <td>01/03/2017</td>
+                                    <td>1008</td>
+                                    <td>357853</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>Vigente</td>
+                                </tr>
 
-                        <label>Nombre completo</label>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="email" class="form-control" disabled value="Kevin Briceño">
-                        </div>
+                                <tr>
+                                    <td><button type="button" class="btn btn-primary button-inner crm-font" style="height:80%">Ver datos</button></td>
+                                    <td>17070580</td>
+                                    <td>01/03/2017</td>
+                                    <td>1008</td>
+                                    <td>357853</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>Vigente</td>
+                                </tr>
 
-                        <label>Dirección</label>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-map-marker "></i></span>
-                            </div>
-                            <input type="email" class="form-control" disabled value="San Isidro 639">
-                        </div>
+                                <tr>
+                                    <td><button type="button" class="btn button-inner btn-primary crm-font">Ver datos</button></td>
+                                    <td>17070580</td>
+                                    <td>01/03/2017</td>
+                                    <td>1008</td>
+                                    <td>357853</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>Vigente</td>
+                                </tr>
 
-
-                        <label>Comuna</label>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-home "></i></span>
-                            </div>
-                            <input type="email" class="form-control" disabled value="Santiago">
-                        </div>
-
-                        <label>Ciudad</label>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-map"></i></span>
-                            </div>
-                            <input type="email" class="form-control" disabled value="Santiago">
-                        </div>
-
-                        <!-- /input-group -->
+                            </tbody>
+                        </table>
                     </div>
                     <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
             </div>
-
-            <!-- left column -->
-            <div class="col-md-6">
-                <!-- general form elements -->
-                <!-- /.card -->
-                <!-- Input addon -->
-                <div class="card card-primary">
-                    <div class="card-header">
-                        <h3 class="card-title">Detalle deuda</h3>
-                    </div>
-                    <div class="card-body">
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="info-box">
-                                    <span class="info-box-icon bg-info"><i class="far fa-money-bill-alt"></i></span>
-
-                                    <div class="info-box-content">
-                                        <label class="info-box-text">Capital</label>
-                                        <label class="info-box-number">$300</label>
-                                    </div>
-                                    <!-- /.info-box-content -->
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="info-box">
-                                    <span class="info-box-icon bg-info"><i class="far fa-money-bill-alt"></i></span>
-
-                                    <div class="info-box-content">
-                                        <label class="info-box-text">Interés</label>
-                                        <label class="info-box-number">$300</label>
-                                    </div>
-                                    <!-- /.info-box-content -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="info-box">
-                                    <span class="info-box-icon bg-info"><i class="far fa-money-bill-alt"></i></span>
-
-                                    <div class="info-box-content">
-                                        <label class="info-box-text">Gastos</label>
-                                        <label class="info-box-number">$300</label>
-                                    </div>
-                                    <!-- /.info-box-content -->
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="info-box">
-                                    <span class="info-box-icon bg-info"><i class="far fa-money-bill-alt"></i></span>
-
-                                    <div class="info-box-content">
-                                        <label class="info-box-text">Cargos</label>
-                                        <label class="info-box-number">$300</label>
-                                    </div>
-                                    <!-- /.info-box-content -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="info-box">
-                                    <span class="info-box-icon bg-info"><i class="far fa-money-bill-alt"></i></span>
-
-                                    <div class="info-box-content">
-                                        <label class="info-box-text">Otros cargos</label>
-                                        <label class="info-box-number">$300</label>
-                                    </div>
-                                    <!-- /.info-box-content -->
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="info-box">
-                                    <span class="info-box-icon bg-info"><i class="far fa-money-bill-alt"></i></span>
-
-                                    <div class="info-box-content">
-                                        <label class="info-box-text">X vencer</label>
-                                        <label class="info-box-number">$300</label>
-                                    </div>
-                                    <!-- /.info-box-content -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="info-box">
-                                    <span class="info-box-icon bg-info"><i class="far fa-money-bill-alt"></i></span>
-
-                                    <div class="info-box-content">
-                                        <label class="info-box-text">Total pagos</label>
-                                        <label class="info-box-number">$300</label>
-                                    </div>
-                                    <!-- /.info-box-content -->
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="info-box">
-                                    <span class="info-box-icon bg-info"><i class="far fa-money-bill-alt"></i></span>
-
-                                    <div class="info-box-content">
-                                        <label class="info-box-text">Saldo</label>
-                                        <label class="info-box-number">$300</label>
-                                    </div>
-                                    <!-- /.info-box-content -->
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <!-- /input-group -->
-                    </div>
-                    <!-- /.card-body -->
-                </div>
-                <!-- /.card -->
-            </div>
-
         </div>
+
         <!-- /.row -->
     </div><!-- /.container-fluid -->
 </section>
@@ -320,248 +480,136 @@
 
 
 
-<!-- Main content -->
+
 <section class="content">
     <div class="container-fluid">
+
         <!-- /.row -->
-        <!-- =========================================================== -->
+        <div class="row">
+            <div class="col-12">
 
-        <div class="card card-primary">
-            <div class="card-header">
-                <h3 class="card-title">Estadísticas</h3>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="info-box bg-info">
-                            <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
 
-                            <div class="info-box-content">
-                                <span class="info-box-text">q_llamados</span>
-                                <span class="info-box-number">41,410</span>
 
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                            </div>
-                            <!-- /.info-box-content -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title title-crm"><i class="fa fa-clipboard"></i> Gestiones</h3>
+
+                        <div class="card-tools">
+                            <ul class="pagination pagination-sm float-right">
+                                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                            </ul>
                         </div>
-                        <!-- /.info-box -->
                     </div>
-                    <!-- /.col -->
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="info-box bg-success">
-                            <span class="info-box-icon"><i class="far fa-times-circle"></i></span>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Gestionador</th>
+                                    <th>Fec. Ingreso</th>
+                                    <th>Gestión</th>
+                                    <th>F.Compromiso</th>
+                                    <th>Fono Gest.</th>
+                                    <th>Email</th>
+                                    <th>Abono</th>
+                                    <th>D.vcto</th>
+                                    <th>Cuotas</th>
+                                    <th>Origen</th>
+                                    <th>B</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                            <div class="info-box-content">
-                                <span class="info-box-text">q_rechazan</span>
-                                <span class="info-box-number">41,410</span>
 
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
+                                <tr>
+                                    <td>X</td>
+                                    <td>SMS</td>
+                                    <td>27/09/2018 18:03:48</td>
+                                    <td>ENVIA SMS</td>
+                                    <td>25/09/2018</td>
+                                    <td>0985526831</td>
+                                    <td>will@gmail.com</td>
+                                    <td>35910</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>Manual</td>
+                                    <td>N</td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="12">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima atque soluta dolor
+                                        ullam quam, totam illum incidunt sed, vel officia qui? Praesentium quos mollitia deserunt veritatis,
+                                        ea et eius.
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>X</td>
+                                    <td>SMS</td>
+                                    <td>27/09/2018 18:03:48</td>
+                                    <td>ENVIA SMS</td>
+                                    <td>25/09/2018</td>
+                                    <td>0985526831</td>
+                                    <td>will@gmail.com</td>
+                                    <td>35910</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>Manual</td>
+                                    <td>N</td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="12">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima atque soluta dolor
+                                        ullam quam, totam illum incidunt sed, vel officia qui? Praesentium quos mollitia deserunt veritatis,
+                                        ea et eius.
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>X</td>
+                                    <td>SMS</td>
+                                    <td>27/09/2018 18:03:48</td>
+                                    <td>ENVIA SMS</td>
+                                    <td>25/09/2018</td>
+                                    <td>0985526831</td>
+                                    <td>will@gmail.com</td>
+                                    <td>35910</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>Manual</td>
+                                    <td>N</td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="12">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima atque soluta dolor
+                                        ullam quam, totam illum incidunt sed, vel officia qui? Praesentium quos mollitia deserunt veritatis,
+                                        ea et eius.
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
                     </div>
-                    <!-- /.col -->
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="info-box bg-warning">
-                            <span class="info-box-icon"><i class="far fa-times-circle"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">q_rechazan_mes_actual</span>
-                                <span class="info-box-number">41,410</span>
-
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="info-box bg-danger">
-                            <span class="info-box-icon"><i class="fas fa-ban"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">q_titular_corta</span>
-                                <span class="info-box-number">41,410</span>
-
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-
-
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="info-box bg-danger">
-                            <span class="info-box-icon"><i class="fas fa-ban"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">q_titular_corta_mes_actual</span>
-                                <span class="info-box-number">41,410</span>
-
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-
-
-
-
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="info-box bg-danger">
-                            <span class="info-box-icon"><i class="fas fa-credit-card"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">q_compromiso</span>
-                                <span class="info-box-number">41,410</span>
-
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-
-
-
-
-
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="info-box bg-danger">
-                            <span class="info-box-icon"><i class="fas fa-credit-card"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">q_compromiso_mes</span>
-                                <span class="info-box-number">41,410</span>
-
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-                    <!-- /.col -->
+                    <!-- /.card-body -->
                 </div>
+
+
+                <!-- /.card -->
             </div>
-         </div>          <!-- /.row -->
-     </div>
+        </div>
+
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
 </section>
-
-
-
-
-        <section class="content">
-            <div class="container-fluid">
-
-                <!-- /.row -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card card-primary">
-                            <div class="card-header">
-                                <h3 class="card-title">Documentos</h3>
-
-                                <!--
-                                    <div class="card-tools">
-                                        <div class="input-group input-group-sm" style="width: 150px;">
-                                            <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-                                            <div class="input-group-append">
-                                                <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                -->
-
-                            </div>
-                            <!-- /.card-header -->
-                            <div class="card-body table-responsive p-0">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>User</th>
-                                            <th>Date</th>
-                                            <th>Status</th>
-                                            <th>Reason</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>183</td>
-                                            <td>John Doe</td>
-                                            <td>11-7-2014</td>
-                                            <td><span class="tag tag-success">Approved</span></td>
-                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>219</td>
-                                            <td>Alexander Pierce</td>
-                                            <td>11-7-2014</td>
-                                            <td><span class="tag tag-warning">Pending</span></td>
-                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>657</td>
-                                            <td>Bob Doe</td>
-                                            <td>11-7-2014</td>
-                                            <td>Approved</td>
-                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>175</td>
-                                            <td>Mike Doe</td>
-                                            <td>11-7-2014</td>
-                                            <td><span class="tag tag-danger">Denied</span></td>
-                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                </div>
-
-                <!-- /.row -->
-            </div><!-- /.container-fluid -->
-        </section>
