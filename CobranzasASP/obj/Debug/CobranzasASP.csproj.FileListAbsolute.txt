@@ -105,3 +105,4 @@ D:\CodeX\ASP.NET\CobranzasASP\CobranzasASP\obj\Debug\CobranzasASP.csprojAssembly
 D:\CodeX\ASP.NET\CobranzasASP\CobranzasASP\obj\Debug\CobranzasASP.csproj.CopyComplete
 D:\CodeX\ASP.NET\CobranzasASP\CobranzasASP\obj\Debug\CobranzasASP.dll
 D:\CodeX\ASP.NET\CobranzasASP\CobranzasASP\obj\Debug\CobranzasASP.pdb
+D:\CodeX\ASP.NET\CobranzasASP\CobranzasASP\bin\FreePreview.dll

@@ -38,7 +38,7 @@
         <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
             <i class="fas fa-bars"></i>
         </a>
-        <nav id="sidebar" class="sidebar-wrapper" style="width:18%; min-width:260px">
+        <nav id="sidebar" class="sidebar-wrapper" style="width:225px">
 
             <!-- SIDEBAR CONTENT -->
             <div class="sidebar-content">
@@ -86,11 +86,9 @@
                 <!-- SIDEBAR MENU -->
                 <div class="sidebar-menu">
                     <ul>
-                        <li class="header-menu">
-                            <span>General</span>
-                        </li>
+
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-tachometer"></i>
                                 <span>Dashboard</span>
                                 <span class="badge badge-pill badge-warning">New</span>
@@ -104,7 +102,7 @@
 
                         <!-- EJECUTIVOS -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa fa-users"></i>
                                 <span>Ejecutivos</span>
                                 <span class="badge badge-pill badge-danger">3</span>
@@ -127,7 +125,7 @@
 
                         <!-- ADMINISTRACIÓN -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="far fa-gem"></i>
                                 <span>Aministración</span>
                             </a>
@@ -154,7 +152,7 @@
 
                         <!-- GERENCIA -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-chart-line"></i>
                                 <span>Gerencia</span>
                             </a>
@@ -178,7 +176,7 @@
 
                         <!-- SUPERVISOR -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-user"></i>
                                 <span>Supervisor</span>
                             </a>
@@ -197,7 +195,7 @@
 
                         <!-- CALIDAD -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-check-circle"></i>
                                 <span>Calidad</span>
                             </a>
@@ -216,7 +214,7 @@
 
                         <!-- EXTRACCIÓN DE DATOS -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-file-text"></i>
                                 <span>Extracción de datos</span>
                             </a>
@@ -235,7 +233,7 @@
 
                         <!-- Opciones discador -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-globe"></i>
                                 <span>Opciones discador</span>
                             </a>
@@ -254,7 +252,7 @@
 
                         <!-- Informes específicos -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-globe"></i>
                                 <span>Informes específicos</span>
                             </a>
@@ -273,7 +271,7 @@
 
                         <!-- Informe Ripley -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-industry"></i>
                                 <span>Informe Ripley</span>
                             </a>
@@ -293,7 +291,7 @@
 
                         <!-- Informe Falabella -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-industry"></i>
                                 <span>Informe Falabella</span>
                             </a>
@@ -312,7 +310,7 @@
 
                         <!-- Asignaciones -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-globe"></i>
                                 <span>Asignaciones</span>
                             </a>
@@ -331,7 +329,7 @@
 
                         <!-- Recursos Humanos -->
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="#" style="padding-left:6px; padding-top: 3px; padding-bottom: 3px;">
                                 <i class="fa fa-users"></i>
                                 <span>Recursos Humanos</span>
                             </a>
@@ -371,8 +369,8 @@
         </nav>
         <!-- sidebar-wrapper  -->
         <!--CONTENIDO DE LA PÁGINA-->
-        <main class="page-content main-back">
-                <div class="container body-content" style=" width:100%; padding:0px;">
+        <main class="page-content main-back" style="padding-top:10px;">
+                <div class="container body-content" style="width:100%; padding:0px;">
                     @RenderBody()
                     <!--
                         <footer>
@@ -435,6 +433,165 @@
 
 
     });
+</script>
+
+
+
+
+<script type="text/javascript">
+    $(function () {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+        });
+
+        $('.swalDefaultSuccess').click(function () {
+            Toast.fire({
+                type: 'success',
+                title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.swalDefaultInfo').click(function () {
+            Toast.fire({
+                type: 'info',
+                title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.swalDefaultError').click(function () {
+            Toast.fire({
+                type: 'error',
+                title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.swalDefaultWarning').click(function () {
+            Toast.fire({
+                type: 'warning',
+                title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.swalDefaultQuestion').click(function () {
+            Toast.fire({
+                type: 'question',
+                title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+
+        $('.toastrDefaultSuccess').click(function () {
+            toastr.success('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
+        });
+        $('.toastrDefaultInfo').click(function () {
+            toastr.info('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
+        });
+        $('.toastrDefaultError').click(function () {
+            toastr.error('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
+        });
+        $('.toastrDefaultWarning').click(function () {
+            toastr.warning('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
+        });
+
+        $('.toastsDefaultDefault').click(function () {
+            $(document).Toasts('create', {
+                title: 'Toast Title',
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.toastsDefaultTopLeft').click(function () {
+            $(document).Toasts('create', {
+                title: 'Toast Title',
+                position: 'topLeft',
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.toastsDefaultBottomRight').click(function () {
+            $(document).Toasts('create', {
+                title: 'Toast Title',
+                position: 'bottomRight',
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.toastsDefaultBottomLeft').click(function () {
+            $(document).Toasts('create', {
+                title: 'Toast Title',
+                position: 'bottomLeft',
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.toastsDefaultAutohide').click(function () {
+            $(document).Toasts('create', {
+                title: 'Toast Title',
+                autohide: true,
+                delay: 750,
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.toastsDefaultNotFixed').click(function () {
+            $(document).Toasts('create', {
+                title: 'Toast Title',
+                fixed: false,
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.toastsDefaultFull').click(function () {
+            $(document).Toasts('create', {
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
+                title: 'Toast Title',
+                subtitle: 'Subtitle',
+                icon: 'fas fa-envelope fa-lg',
+            })
+        });
+        $('.toastsDefaultFullImage').click(function () {
+            $(document).Toasts('create', {
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
+                title: 'Toast Title',
+                subtitle: 'Subtitle',
+                image: '../../dist/img/user3-128x128.jpg',
+                imageAlt: 'User Picture',
+            })
+        });
+        $('.toastsDefaultSuccess').click(function () {
+            $(document).Toasts('create', {
+                class: 'bg-success',
+                title: 'Toast Title',
+                subtitle: 'Subtitle',
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.toastsDefaultInfo').click(function () {
+            $(document).Toasts('create', {
+                class: 'bg-info',
+                title: 'Toast Title',
+                subtitle: 'Subtitle',
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.toastsDefaultWarning').click(function () {
+            $(document).Toasts('create', {
+                class: 'bg-warning',
+                title: 'Toast Title',
+                subtitle: 'Subtitle',
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.toastsDefaultDanger').click(function () {
+            $(document).Toasts('create', {
+                class: 'bg-danger',
+                title: 'Toast Title',
+                subtitle: 'Subtitle',
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+        $('.toastsDefaultMaroon').click(function () {
+            $(document).Toasts('create', {
+                class: 'bg-maroon',
+                title: 'Toast Title',
+                subtitle: 'Subtitle',
+                body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+        });
+    });
+
 </script>
 
 
@@ -811,9 +968,6 @@
 
     /*-----------------------------chiller-theme-------------------------------------------------*/
 
-    .chiller-theme .sidebar-wrapper {
-        background: #3b5784;
-    }
 
         .chiller-theme .sidebar-wrapper .sidebar-header,
         .chiller-theme .sidebar-wrapper .sidebar-search,
@@ -943,6 +1097,10 @@
         color: white;
     }
 
+    .left-menu-item {
+        padding-left:6px;
+    }
+
     /*--BOTONES--*/
     /*BOTON ACCION1 1*/
     .button-one {
@@ -977,7 +1135,7 @@
     /*--FUENTES Y TEXTO--*/
     /*NEGRITA*/
     .bold-crm {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
         color: black;
         height: 4px;
         font-weight: bold;
@@ -985,21 +1143,71 @@
 
     /*TEXTO NORMAL*/
     .text-crm {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
+        color: black;
+        height: 4px;
+    }
+
+    .table-th-crm {
+        font-size: 0.85rem;
         color: black;
         height: 4px;
     }
 
     /*TÍTULOS TABLAS*/
     .title-crm {
-        font-size: 1.0rem;
-        color: black;
+        font-size: 0.88rem;
+        color: coral;
         font-weight: bold;
+    }
+
+    .text-badge {
+        font-size: 0.84rem;
     }
 
     /*ENCABEZADOS TABLAS*/
     th {
         font-size: 0.9rem;
+    }
+
+    .table-crm td {
+        padding-top: 1em;
+    }
+
+    .table-crm:nth-child(4) td{
+        padding-top: 0
+    }
+
+    .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    background-color: transparent
+}
+
+    .table td, .table th {
+        padding: .25rem;
+        vertical-align: bottom;
+        border-top: 1px solid #dee2e6
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6
+    }
+
+    .card-header {
+    padding: .45rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 0 solid rgba(0,0,0,.125)
+}
+
+    .card-header:first-child {
+        border-radius: calc(.25rem - 0) calc(.25rem - 0) 0 0
+    }
+
+    .card-header + .list-group .list-group-item:first-child {
+        border-top: 0
     }
 
 </style>

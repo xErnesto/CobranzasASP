@@ -1,22 +1,24 @@
-﻿<!-- Content Header (Page header) -->
-<section class="content-header" style="width:100%">
+﻿<!-- MÓDULO SUPERIOR -->
+<section class="content-header" style="margin-left:-86px; margin-right:-2px; padding-top:0px; padding-bottom:0px">
     <div class="container-fluid">
+
+        <!-- FILA -->
         <div class="row mb-2">
 
 
-
+            <!-- INPUTS DE BÚSQUEDA -->
             <div class="col-md-2 col-sm-6 col-12">
-                    <select class="form-control select2" style="width: 100%;  height:37px;">
-                        <option selected="selected">Rut</option>
-                        <option>Nombre</option>
-                        <option>ID</option>
-                    </select>
+
+                <select class="form-control select2" style="width: 100%;  height:37px;">
+                    <option selected="selected">Rut</option>
+                    <option>Nombre</option>
+                    <option>ID</option>
+                </select>
             </div>
 
-
+            <!-- BARA DE BÚSQUEDA  -->
             <div class="col-md-4 col-sm-6 col-12">
 
-                <!-- SIDEBAR SEARCH  -->
                 <div class="sidebar-search" style="width:100%">
                     <div>
                         <div class="input-group" style="height:100%">
@@ -31,17 +33,19 @@
                 </div>
             </div>
 
+            <!-- BOTÓN GESTIONAR -->
             <div class="col-md-2 col-sm-6 col-12">
                 <button type="button" class="btn btn-block button-two">Gestionar</button>
-            </div><!-- /.container-fluid -->
+            </div>
 
-
+            <!-- BOTÓN FONOS -->
             <div class="col-md-2 col-sm-6 col-12">
-                <button type="button" class="btn btn-block button-one">Fonos</button>
-            </div><!-- /.container-fluid -->
+                <button type="button" class="btn btn-block button-one" data-toggle="modal" data-target="#modal-xl2">Fonos</button>
+            </div>
 
+            <!-- BOTÓN EMAILS -->
             <div class="col-md-2 col-sm-6 col-12">
-                <button type="button" class="btn btn-block button-one">Emails</button>
+                <button type="button" class="btn btn-block button-one" data-toggle="modal" data-target="#modal-xl">Emails</button>
             </div>
         </div>
     </div>
@@ -49,16 +53,16 @@
 
 
 
-<!--TABLAS CARTERA Y DATOS-->
-<section class="content">
+<!-- LAS 4 TABLAS -->
+<section class="content" style="margin-left:-78px; margin-right:5px;">
     <div class="container-fluid">
 
         <div class="row">
 
 
 
-            <div class="col-md-6">
-                <div class="card">
+            <div class="col-md-6" style="padding-right:4px;">
+                <div class="card" style="margin-bottom:6px;">
                     <div class="card-header">
                         <h3 class="card-title title-crm"><i class="fas fa-globe"></i> Información de cartera</h3>
                     </div>
@@ -67,15 +71,6 @@
                     <div class="card-body p-0">
                         <table class="table table-condensed">
                             <thead>
-
-                                <!--
-                    <tr>
-
-                        <th>#</th>
-                        <th>Task</th>
-                        <th>Progress</th>
-                    </tr>
-                    -->
 
                             </thead>
                             <tbody>
@@ -100,7 +95,8 @@
                                 <tr>
                                     <td><i class="fa fa-calendar"></i></td>
                                     <td><p class="bold-crm">Fec. Último estado:</p></td>
-                                    <td><p class="text-crm">04/10/2019</p><td>
+                                    <td><p class="text-crm">04/10/2019</p>
+                                    <td>
                                 </tr>
 
                                 <tr>
@@ -126,70 +122,64 @@
                     <div class="card-header">
                         <h3 class="card-title title-crm"><i class="fas fa-credit-card"></i> Detalle deuda</h3>
                     </div>
-                    <!-- /.card-header -->
+
                     <div class="card-body p-0">
                         <table class="table table-condensed">
                             <thead>
-                                <!--
-                        <tr>
-                            <th>#</th>
-                            <th>Task</th>
-                            <th>Progress</th>
-                        </tr>
-                    -->
+
                             </thead>
                             <tbody>
 
                                 <tr>
                                     <td><i class="fa fa-money"></i></td>
                                     <td><p class="bold-crm">Capital:</p></td>
-                                    <td><span class="badge bg-success">$300</span></td>
+                                    <td><p class="text-crm">$1430</p></td>
                                 </tr>
 
                                 <tr>
                                     <td><i class="fa fa-percent"></i></td>
                                     <td><p class="bold-crm">Interés:</p></td>
-                                    <td><span class="badge bg-success">$400</span></td>
+                                    <td><p class="text-crm">$1430</p></td>
                                 </tr>
 
                                 <tr>
                                     <td><i class="fa fa-calculator"></i></td>
                                     <td><p class="bold-crm">Gastos:</p></td>
-                                    <td><span class="badge bg-success">$400</span></td>
+                                    <td><p class="text-crm">$1430</p></td>
                                 </tr>
 
                                 <tr>
                                     <td><i class="fa fa-credit-card"></i></td>
                                     <td><p class="bold-crm">Cargos:</p></td>
-                                    <td><span class="badge bg-success">$100</span></td>
+                                    <td><p class="text-crm">$1430</p></td>
                                 </tr>
 
 
                                 <tr>
                                     <td><i class="fa fa-credit-card"></i></td>
                                     <td><p class="bold-crm">Otros Cargos:</p></td>
-                                    <td><span class="badge bg-success">$8600</span></td>
+                                    <td><p class="text-crm">$1430</p></td>
                                 </tr>
 
 
                                 <tr>
                                     <td><i class="fa fa-times"></i></td>
                                     <td><p class="bold-crm">X Vencer:</p></td>
-                                    <td><span class="badge bg-success">$845</span></td>
+                                    <td><p class="text-crm">$1430</p></td>
                                 </tr>
 
 
                                 <tr>
                                     <td><i class="fa fa-money"></i></td>
                                     <td><p class="bold-crm">Total pagos</p></td>
-                                    <td><span class="badge bg-success">$1430</span></td>
+                                    <td><p class="text-crm">$1430</p></td>
                                 </tr>
 
 
                                 <tr>
                                     <td><i class="fa fa-money"></i></td>
                                     <td><p class="bold-crm">Saldo:</p></td>
-                                    <td><span class="badge bg-success">$800</span></td>
+                                    <td><span class="badge bg-success text-badge">$800</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -203,22 +193,16 @@
 
 
 
-            <div class="col-md-6">
-                <div class="card">
+            <div class="col-md-6" style="padding-left:4px">
+                <div class="card" style="margin-bottom:6px;">
                     <div class="card-header">
                         <h3 class="card-title title-crm"><i class="fas fa-address-book "></i> Datos deudor</h3>
                     </div>
-                    <!-- /.card-header -->
+
                     <div class="card-body p-0">
                         <table class="table table-condensed">
                             <thead>
-                                <!--
-                        <tr>
-                            <th>#</th>
-                            <th>Task</th>
-                            <th>Progress</th>
-                        </tr>
-                    -->
+
                             </thead>
                             <tbody>
                                 <tr>
@@ -260,7 +244,7 @@
                         </table>
                     </div>
                 </div>
-                <!-- /.card-body -->
+
 
 
 
@@ -268,18 +252,11 @@
                     <div class="card-header">
                         <h3 class="card-title title-crm"><i class="fa fa-bar-chart"></i> Estadísticas</h3>
                     </div>
-                    <!-- /.card-header -->
+
                     <div class="card-body p-0">
                         <table class="table table-condensed">
                             <thead>
-                                <!--
-                        <tr>
-                            <th>#</th>
-                            <th>Task</th>
-                            <th>Progress</th>
-                            <th>Label</th>
-                        </tr>
-                    -->
+
                             </thead>
                             <tbody>
                                 <tr>
@@ -288,7 +265,7 @@
                                     <td>
                                         <p class="text-crm">12</p>
                                     </td>
-                                    <td><span class="badge bg-success">+70%</span></td>
+                                    <td><span class="badge bg-success text-badge">+70%</span></td>
                                 </tr>
                                 <tr>
                                     <td><i class="far fa-times-circle"></i></td>
@@ -296,7 +273,7 @@
                                     <td>
                                         <p class="text-crm">12</p>
                                     </td>
-                                    <td><span class="badge bg-success">+70%</span></td>
+                                    <td><span class="badge bg-danger text-badge">+34%</span></td>
                                 </tr>
                                 <tr>
                                     <td><i class="far fa-times-circle"></i></td>
@@ -304,7 +281,7 @@
                                     <td>
                                         <p class="text-crm">12</p>
                                     </td>
-                                    <td><span class="badge bg-success">+70%</span></td>
+                                    <td><span class="badge bg-danger text-badge">+65%</span></td>
                                 </tr>
                                 <tr>
                                     <td><i class="fas fa-ban"></i></td>
@@ -312,7 +289,7 @@
                                     <td>
                                         <p class="text-crm">12</p>
                                     </td>
-                                    <td><span class="badge bg-success">+70%</span></td>
+                                    <td><span class="badge bg-danger text-badge">+23%</span></td>
                                 </tr>
                                 <tr>
                                     <td><i class="fas fa-ban"></i></td>
@@ -320,7 +297,7 @@
                                     <td>
                                         <p class="text-crm">12</p>
                                     </td>
-                                    <td><span class="badge bg-success">+70%</span></td>
+                                    <td><span class="badge bg-success text-badge">-20%</span></td>
                                 </tr>
                                 <tr>
                                     <td><i class="fas fa-credit-card"></i></td>
@@ -328,7 +305,7 @@
                                     <td>
                                         <p class="text-crm">12</p>
                                     </td>
-                                    <td><span class="badge bg-success">+70%</span></td>
+                                    <td><span class="badge bg-success text-badge">+40%</span></td>
                                 </tr>
                                 <tr>
                                     <td><i class="fas fa-credit-card"></i></td>
@@ -336,14 +313,14 @@
                                     <td>
                                         <p class="text-crm">12</p>
                                     </td>
-                                    <td><span class="badge bg-success">+70%</span></td>
+                                    <td><span class="badge bg-success text-badge">+10%</span></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <!-- /.card -->
+
         </div>
     </div>
 </section>
@@ -352,145 +329,139 @@
 
 
 
-
-<section class="content">
+<!-- TABLA DOCUMENTOS -->
+<section class="content" style="margin-left:-78px; margin-right:5px;">
     <div class="container-fluid">
 
-        <!-- /.row -->
+        <!-- FILA -->
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
                         <h3 class="card-title title-crm"><i class="fa fa-file-text"></i> Documentos</h3>
 
-                        <!--
-                            <div class="card-tools">
-                                <div class="input-group input-group-sm" style="width: 150px;">
-                                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
-                                    <div class="input-group-append">
-                                        <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        -->
 
                     </div>
-                    <!-- /.card-header -->
+
                     <div class="card-body table-responsive p-0" style="padding:12px">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
                                     <th></th>
-                                    <th>N° Documento</th>
-                                    <th>Fec. Vencimiento</th>
-                                    <th>Días Mora</th>
-                                    <th>Monto</th>
-                                    <th>Interés</th>
-                                    <th>Honorarios</th>
-                                    <th>Gastos</th>
-                                    <th>Gastos Jud.</th>
-                                    <th>Interés Penal</th>
-                                    <th>Estado</th>
+                                    <th><p class="table-th-crm">N° Documento</p></th>
+                                    <th><p class="table-th-crm">Fec. Vencimiento</p></th>
+                                    <th><p class="table-th-crm">Días Mora</p></th>
+                                    <th><p class="table-th-crm">Monto</p></th>
+                                    <th><p class="table-th-crm">Interés</p></th>
+                                    <th><p class="table-th-crm">Honorarios</p></th>
+                                    <th><p class="table-th-crm">Gastos</p></th>
+                                    <th><p class="table-th-crm">Gastos Jud.</p></th>
+                                    <th><p class="table-th-crm">Interés Penal</p></th>
+                                    <th><p class="table-th-crm">Estado</p></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><button type="button" class="btn btn-primary button-inner crm-font">Ver datos</button></td>
-                                    <td>17070580</td>
-                                    <td>01/03/2017</td>
-                                    <td>1008</td>
-                                    <td>357853</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>Vigente</td>
+                                    <td><button type="button" class="btn btn-primary button-inner crm-font" style="height:75%"><i class="fa fa-info-circle"></i></button></td>
+                                    <td><p class="text-crm">17070580</p></td>
+                                    <td><p class="text-crm">01/03/2017</p></td>
+                                    <td><p class="text-crm">1008</p></td>
+                                    <td><p class="text-crm">357853</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">Vigente</p></td>
                                 </tr>
                                 <tr>
-                                    <td><button type="button" class="btn btn-primary button-inner crm-font">Ver datos</button></td>
-                                    <td>17070580</td>
-                                    <td>01/03/2017</td>
-                                    <td>1008</td>
-                                    <td>357853</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>Vigente</td>
+                                    <td><button type="button" class="btn btn-primary button-inner crm-font" style="height:75%"><i class="fa fa-info-circle"></i></button></td>
+                                    <td><p class="text-crm">17070580</p></td>
+                                    <td><p class="text-crm">01/03/2017</p></td>
+                                    <td><p class="text-crm">1008</p></td>
+                                    <td><p class="text-crm">357853</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">Vigente</p></td>
                                 </tr>
                                 <tr>
-                                    <td><button type="button" class="btn btn-primary button-inner crm-font">Ver datos</button></td>
-                                    <td>17070580</td>
-                                    <td>01/03/2017</td>
-                                    <td>1008</td>
-                                    <td>357853</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>Vigente</td>
-                                </tr>
-
-                                <tr>
-                                    <td><button type="button" class="btn btn-primary button-inner crm-font" style="height:80%">Ver datos</button></td>
-                                    <td>17070580</td>
-                                    <td>01/03/2017</td>
-                                    <td>1008</td>
-                                    <td>357853</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>Vigente</td>
+                                    <td><button type="button" class="btn btn-primary button-inner crm-font" style="height:75%"><i class="fa fa-info-circle"></i></button></td>
+                                    <td><p class="text-crm">17070580</p></td>
+                                    <td><p class="text-crm">01/03/2017</p></td>
+                                    <td><p class="text-crm">1008</p></td>
+                                    <td><p class="text-crm">357853</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">Vigente</p></td>
                                 </tr>
 
                                 <tr>
-                                    <td><button type="button" class="btn button-inner btn-primary crm-font">Ver datos</button></td>
-                                    <td>17070580</td>
-                                    <td>01/03/2017</td>
-                                    <td>1008</td>
-                                    <td>357853</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>Vigente</td>
+                                    <td><button type="button" class="btn btn-primary button-inner crm-font" style="height:75%"><i class="fa fa-info-circle"></i></button></td>
+                                    <td><p class="text-crm">17070580</p></td>
+                                    <td><p class="text-crm">01/03/2017</p></td>
+                                    <td><p class="text-crm">1008</p></td>
+                                    <td><p class="text-crm">357853</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">Vigente</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><button type="button" class="btn btn-primary button-inner crm-font" style="height:75%"><i class="fa fa-info-circle"></i></button></td>
+                                    <td><p class="text-crm">17070580</p></td>
+                                    <td><p class="text-crm">01/03/2017</p></td>
+                                    <td><p class="text-crm">1008</p></td>
+                                    <td><p class="text-crm">357853</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">Vigente</p></td>
                                 </tr>
 
                             </tbody>
                         </table>
                     </div>
-                    <!-- /.card-body -->
+
                 </div>
-                <!-- /.card -->
+
             </div>
         </div>
 
-        <!-- /.row -->
-    </div><!-- /.container-fluid -->
+
+    </div>
 </section>
 
 
 
 
 
-
-<section class="content">
+<!-- TABLA GESTIONES -->
+<section class="content" style="margin-left:-78px; margin-right:5px;">
     <div class="container-fluid">
 
-        <!-- /.row -->
+        <!-- FILA -->
         <div class="row">
+
+            <!-- 12 COLUMNAS -->
             <div class="col-12">
 
 
-
+                <!-- CARTA -->
                 <div class="card">
+
+                    <!-- CARTA-CABECERA -->
                     <div class="card-header">
                         <h3 class="card-title title-crm"><i class="fa fa-clipboard"></i> Gestiones</h3>
 
@@ -504,97 +475,104 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- /.card-header -->
-                    <div class="card-body p-0">
+
+                    <!-- CARTA-CUERPO -->
+                    <div class="card-body table-responsive p-0">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>Tipo</th>
-                                    <th>Gestionador</th>
-                                    <th>Fec. Ingreso</th>
-                                    <th>Gestión</th>
-                                    <th>F.Compromiso</th>
-                                    <th>Fono Gest.</th>
-                                    <th>Email</th>
-                                    <th>Abono</th>
-                                    <th>D.vcto</th>
-                                    <th>Cuotas</th>
-                                    <th>Origen</th>
-                                    <th>B</th>
+                                    <th><p class="table-th-crm">Tipo</p></th>
+                                    <th><p class="table-th-crm">Gestionador</p></th>
+                                    <th><p class="table-th-crm">Fec. Ingreso</p></th>
+                                    <th><p class="table-th-crm">Gestión</p></th>
+                                    <th><p class="table-th-crm">F.Compromiso</p></th>
+                                    <th><p class="table-th-crm">Fono Gest.</p></th>
+                                    <th><p class="table-th-crm">Email</p></th>
+                                    <th><p class="table-th-crm">Abono</p></th>
+                                    <th><p class="table-th-crm">D.vcto</p></th>
+                                    <th><p class="table-th-crm">Cuotas</p></th>
+                                    <th><p class="table-th-crm">Origen</p></th>
+                                    <th><p class="table-th-crm">B</p></th>
                                 </tr>
                             </thead>
                             <tbody>
 
 
                                 <tr>
-                                    <td>X</td>
-                                    <td>SMS</td>
-                                    <td>27/09/2018 18:03:48</td>
-                                    <td>ENVIA SMS</td>
-                                    <td>25/09/2018</td>
-                                    <td>0985526831</td>
-                                    <td>will@gmail.com</td>
-                                    <td>35910</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>Manual</td>
-                                    <td>N</td>
+                                    <td><p class="text-crm">X</p></td>
+                                    <td><p class="text-crm">SMS</p></td>
+                                    <td><p class="text-crm">27/09/2018 18:03:48</p></td>
+                                    <td><p class="text-crm">ENVIA SMS</p></td>
+                                    <td><p class="text-crm">25/09/2018</p></td>
+                                    <td><p class="text-crm">0985526831</p></td>
+                                    <td><p class="text-crm">will@gmail.com</p></td>
+                                    <td><p class="text-crm">35910</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">Manual</p></td>
+                                    <td><p class="text-crm">N</p></td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="12">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima atque soluta dolor
-                                        ullam quam, totam illum incidunt sed, vel officia qui? Praesentium quos mollitia deserunt veritatis,
-                                        ea et eius.
+                                        <p class="text-crm">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima atque soluta dolor
+                                            ullam quam, totam illum incidunt sed, vel officia qui? Praesentium quos mollitia deserunt veritatis,
+                                            ea et eius.
+                                        </p>
                                     </td>
                                 </tr>
 
 
                                 <tr>
-                                    <td>X</td>
-                                    <td>SMS</td>
-                                    <td>27/09/2018 18:03:48</td>
-                                    <td>ENVIA SMS</td>
-                                    <td>25/09/2018</td>
-                                    <td>0985526831</td>
-                                    <td>will@gmail.com</td>
-                                    <td>35910</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>Manual</td>
-                                    <td>N</td>
+                                    <td><p class="text-crm">X</p></td>
+                                    <td><p class="text-crm">SMS</p></td>
+                                    <td><p class="text-crm">27/09/2018 18:03:48</p></td>
+                                    <td><p class="text-crm">ENVIA SMS</p></td>
+                                    <td><p class="text-crm">25/09/2018</p></td>
+                                    <td><p class="text-crm">0985526831</p></td>
+                                    <td><p class="text-crm">will@gmail.com</p></td>
+                                    <td><p class="text-crm">35910</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">Manual</p></td>
+                                    <td><p class="text-crm">N</p></td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="12">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima atque soluta dolor
-                                        ullam quam, totam illum incidunt sed, vel officia qui? Praesentium quos mollitia deserunt veritatis,
-                                        ea et eius.
+                                        <p class="text-crm">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima atque soluta dolor
+                                            ullam quam, totam illum incidunt sed, vel officia qui? Praesentium quos mollitia deserunt veritatis,
+                                            ea et eius.
+                                        </p>
                                     </td>
                                 </tr>
 
 
 
                                 <tr>
-                                    <td>X</td>
-                                    <td>SMS</td>
-                                    <td>27/09/2018 18:03:48</td>
-                                    <td>ENVIA SMS</td>
-                                    <td>25/09/2018</td>
-                                    <td>0985526831</td>
-                                    <td>will@gmail.com</td>
-                                    <td>35910</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>Manual</td>
-                                    <td>N</td>
+                                    <td><p class="text-crm">X</p></td>
+                                    <td><p class="text-crm">SMS</p></td>
+                                    <td><p class="text-crm">27/09/2018 18:03:48</p></td>
+                                    <td><p class="text-crm">ENVIA SMS</p></td>
+                                    <td><p class="text-crm">25/09/2018</p></td>
+                                    <td><p class="text-crm">0985526831</p></td>
+                                    <td><p class="text-crm">will@gmail.com</p></td>
+                                    <td><p class="text-crm">35910</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">0</p></td>
+                                    <td><p class="text-crm">Manual</p></td>
+                                    <td><p class="text-crm">N</p></td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="12">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima atque soluta dolor
-                                        ullam quam, totam illum incidunt sed, vel officia qui? Praesentium quos mollitia deserunt veritatis,
-                                        ea et eius.
+                                        <p class="text-crm">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima atque soluta dolor
+                                            ullam quam, totam illum incidunt sed, vel officia qui? Praesentium quos mollitia deserunt veritatis,
+                                            ea et eius.
+                                        </p>
                                     </td>
                                 </tr>
 
@@ -602,14 +580,63 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- /.card-body -->
+
                 </div>
 
 
-                <!-- /.card -->
+
             </div>
         </div>
 
-        <!-- /.row -->
-    </div><!-- /.container-fluid -->
+
+    </div>
+</section>
+
+
+
+<!-- MODAL EMAIL -->
+<section class="content">
+    <div class="modal fade" id="modal-xl">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Email Modal</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- MODAL FONOS -->
+<section class="content">
+    <div class="modal fade" id="modal-xl2">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Fonos Modal</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
