@@ -22,7 +22,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="~/Content/adminlte.min.css">
+    <link rel="stylesheet" href="~/Content/adminlte.min2.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
@@ -62,11 +62,18 @@
                             <strong>Smith</strong>
                         </span>
                         <span class="user-role">Administrator</span>
+
+                        <!--
                         <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
                         </span>
+                        -->
+
+                        @Html.Partial("_LoginPartial")
                     </div>
+
+                   
                 </div>
 
                 <!-- SIDEBAR SEARCH  -->
@@ -85,6 +92,8 @@
 
                 <!-- SIDEBAR MENU -->
                 <div class="sidebar-menu">
+
+
                     <ul>
 
                         <li class="sidebar-dropdown">
@@ -361,9 +370,6 @@
                 <a href="#">
                     <i class="fa fa-cog footer-icon"></i>
                     <span class="badge-sonar"></span>
-                </a>
-                <a href="#">
-                    <i class="fa fa-power-off footer-icon"></i>
                 </a>
             </div>
         </nav>
@@ -711,7 +717,7 @@
     /*--------------------sidebar-header----------------------*/
 
     .sidebar-wrapper .sidebar-header {
-        padding: 20px;
+        padding: 10px;
         overflow: hidden;
     }
 
@@ -732,6 +738,7 @@
 
         .sidebar-wrapper .sidebar-header .user-info {
             float: left;
+            width: 105px;
         }
 
             .sidebar-wrapper .sidebar-header .user-info > span {
@@ -1106,6 +1113,7 @@
     .button-one {
         background-color: dodgerblue;
         color: white;
+        font-size: 0.9rem;
     }
 
     .button-one:hover {
@@ -1117,6 +1125,7 @@
     .button-two {
         background-color: darkorange;
         color: white;
+        font-size: 0.9rem;
     }
 
     .button-two:hover {
@@ -1194,6 +1203,11 @@
     .table thead th {
         vertical-align: bottom;
         border-bottom: 2px solid #dee2e6
+    }
+
+    .card {
+        box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+        margin-bottom: 0.5rem
     }
 
     .card-header {
