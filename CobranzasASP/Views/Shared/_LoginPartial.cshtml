@@ -1,25 +1,57 @@
 ﻿@using Microsoft.AspNet.Identity
+
+@{bool deleteL = false;}
+@{string username = User.Identity.GetUserName().ToString();}
+@{char[] charsToTrim = new char[30];}
+
+@for (int i = 0; i < username.Length; i++)
+{
+
+    if (username[i].ToString() == "@")
+    {
+        deleteL = true;
+    }
+
+    if (deleteL == true)
+    {
+        charsToTrim[i] = username[i];
+    }
+
+}
+@{username = username.Trim(charsToTrim);}
+
+
+<span class="user-name">
+    @username
+</span>
+<span class="user-role">Administrator</span>
+
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
-    @Html.AntiForgeryToken()
+        @Html.AntiForgeryToken()
 
-    <ul class="nav navbar-nav navbar-right">
-        <li>
-            @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-        </li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
-    </ul>
+        <div class="row">
+            <div class="col-5" style="padding-right: 0px;padding-left: 0px;">
+                <div><a class="badge bg-danger text-badge" href="javascript:document.getElementById('logoutForm').submit()">Log off</a></div>
+            </div>
+
+            <div class="col-5" style="padding-right: 0px;padding-left: 0px; margin-left:15px;">
+                <div>@Html.ActionLink("Cuenta", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @style = "color: white", @class = "badge bg-primary text-badge" })</div>
+            </div>
+        </div>
+
     }
 }
 else
 {
+
     <div class="row">
         <div class="col-5" style="padding-right: 0px;padding-left: 0px;">
             <div>@Html.ActionLink("Registro", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @style = "color: white", @class = "badge bg-primary text-badge" })</div>
         </div>
-        
+
         <div class="col-5" style="padding-right: 0px;padding-left: 0px; margin-left:15px;">
             <div>@Html.ActionLink("Inicio", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "color: white", @class = "badge bg-success text-badge" })</div>
         </div>
