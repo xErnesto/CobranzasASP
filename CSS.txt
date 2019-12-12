@@ -6,3 +6,5 @@ elemento {
 h1 {
     color:blue
 }
+
+prueba de clon
